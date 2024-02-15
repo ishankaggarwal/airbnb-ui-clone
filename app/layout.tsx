@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Airbnb | Vacation rentals, cabins, beach houses, & more",
+  title: "Airbnb",
   description: "Airbnb UI Clone",
   icons: {
     shortcut: "/logo.png",
