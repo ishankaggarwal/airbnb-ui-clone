@@ -8,13 +8,15 @@ type Data = {
 
 export default function MenuItems({ item }: { item: Data }) {
   return (
-    <button className="w-fit h-fit hover:border-b hover:border-slate-200 hover:bg-[#ebebeb]/20 rounded-lg">
-      <div className="flex flex-col items-center justify-center p-2 gap-3">
-        {typeof item.icon === "object"
-          ? item.icon
-          : React.createElement(item.icon)}
-        <p className="text-sm">{item.title}</p>
-      </div>
-    </button>
+    <div className="hover:border-b hover:border-slate-400">
+      <button className="hover:bg-[#ebebeb]/20 rounded-lg">
+        <div className="flex flex-col items-center justify-center p-2 gap-3">
+          {typeof item.icon === "object"
+            ? item.icon
+            : React.createElement(item.icon)}
+          <span className="text-sm text-clip">{item.title}</span>
+        </div>
+      </button>
+    </div>
   );
 }

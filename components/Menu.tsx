@@ -18,7 +18,6 @@ import {
   FaSkiing,
   FaUmbrellaBeach,
 } from "react-icons/fa";
-import { HiOutlineViewGridAdd } from "react-icons/hi";
 import { PiPark } from "react-icons/pi";
 import { RiCactusLine } from "react-icons/ri";
 import { LuPalmtree } from "react-icons/lu";
@@ -32,92 +31,88 @@ type Data = {
 
 const data: Data[] = [
   {
-    icon: <GiWoodCabin />,
+    icon: <GiWoodCabin size={25} />,
     title: "Cabin",
   },
   {
-    icon: <TbUfo />,
+    icon: <TbUfo size={25} />,
     title: "OMG!",
   },
   {
-    icon: <GiBowlingStrike />,
+    icon: <GiBowlingStrike size={25} />,
     title: "Play",
   },
   {
-    icon: <LiaSwimmingPoolSolid />,
+    icon: <LiaSwimmingPoolSolid size={25} />,
     title: "Amazing pools",
   },
   {
-    icon: <FaFire />,
+    icon: <FaFire size={25} />,
     title: "Trending",
   },
   {
-    icon: <HiOutlineViewGridAdd />,
-    title: "Off the grid",
-  },
-  {
-    icon: <GiCampingTent />,
+    icon: <GiCampingTent size={25} />,
     title: "Camping",
   },
   {
-    icon: <GiCaveEntrance />,
+    icon: <GiCaveEntrance size={25} />,
     title: "Caves",
   },
   {
-    icon: <FaUmbrellaBeach />,
+    icon: <FaUmbrellaBeach size={25} />,
     title: "Beachfront",
   },
   {
-    icon: <FaBed />,
+    icon: <FaBed size={25} />,
     title: "Bed & Breakfast",
   },
   {
-    icon: <FaPalette />,
+    icon: <FaPalette size={25} />,
     title: "Creative spaces",
   },
   {
-    icon: <GiTreehouse />,
+    icon: <GiTreehouse size={25} />,
     title: "Treehouses",
   },
   {
-    icon: <GiGrapes />,
+    icon: <GiGrapes size={25} />,
     title: "Vineyards",
   },
   {
-    icon: <PiPark />,
+    icon: <PiPark size={25} />,
     title: "National Park",
   },
   {
-    icon: <FaSkiing />,
+    icon: <FaSkiing size={25} />,
     title: "Skiing",
   },
   {
-    icon: <RiCactusLine />,
+    icon: <RiCactusLine size={25} />,
     title: "Desert",
   },
   {
-    icon: <LuPalmtree />,
+    icon: <LuPalmtree size={25} />,
     title: "Tropical",
   },
   {
-    icon: <MdOutlineSurfing />,
+    icon: <MdOutlineSurfing size={25} />,
     title: "Surfing",
   },
 ];
 
 export default function Menu() {
   return (
-    <div className="flex gap-4 p-4 relative justify-between">
-      <div className="flex gap-5 overflow-scroll max-w-5xl">
+    <div className="flex gap-4 pl-10 pt-8 p-4 relative justify-between items-center">
+      <div className="flex gap-8 overflow-scroll max-w-5xl">
         {data.map((i) => (
           <MenuItems key={i.title} item={i} />
         ))}
       </div>
-      <button className="border border-slate-200 flex p-1 items-center gap-2 rounded-xl max-w-[100px] justify-center">
+      <button className="border border-slate-200 flex p-3 items-center gap-2 rounded-xl max-w-[150px] justify-center h-[60px]">
         <FaSliders />
         <span className="text-sm">Filters</span>
       </button>
-      <div className="flex items-center border border-slate-200 p-1 gap-2 rounded-xl flex-1 justify-center">
+      <div className="flex items-center border border-slate-200 p-1 gap-2 rounded-xl flex-1 justify-center h-[60px]">
         <span className="text-sm">Display total before taxes</span>
         <Switch />
       </div>
