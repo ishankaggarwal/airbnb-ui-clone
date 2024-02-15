@@ -8,7 +8,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="flex justify-between items-center p-6">
+    <header className="flex justify-between items-center p-6 border-b-2 border-slate-100">
       <div className="">
         <Link href="/" className="flex items-center justify-center pl-20 gap-2">
           <Image src="/logo.svg" alt="logo" width={120} height={120} />
