@@ -12,7 +12,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
 export default function ListingCard({ listing }: any) {
