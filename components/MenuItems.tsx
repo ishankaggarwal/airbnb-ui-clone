@@ -20,7 +20,7 @@ export default function MenuItems({ item }: { item: Data }) {
           {typeof item.icon === "object"
             ? item.icon
             : React.createElement(item.icon)}
-          <span className="text-sm text-clip">{item.title}</span>
+          <span className="text-xs text-clip">{item.title}</span>
         </div>
       </button>
     </div>

@@ -17,7 +17,7 @@ export async function getListings(){
     const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '826c6ebba1msh827647ba5f3588ap1f4209jsn92ebbea6db7b',
+		'X-RapidAPI-Key': `${process.env.RAPID_API_KEY}`,
 		'X-RapidAPI-Host': 'airbnb13.p.rapidapi.com'
 	},
     next:{

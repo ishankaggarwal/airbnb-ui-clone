@@ -102,8 +102,8 @@ export const data: Data[] = [
 
 export default function Menu() {
   return (
-    <div className="flex gap-4 pl-10 pt-8 p-4 relative justify-between items-center">
-      <div className="flex gap-8 overflow-scroll max-w-5xl">
+    <div className="flex gap-4 pl-20 pt-8 p-4 relative justify-between items-center">
+      <div className="flex gap-7 overflow-scroll max-w-5xl">
         {data.map((i) => (
           <MenuItems key={i.title} item={i} />
         ))}
