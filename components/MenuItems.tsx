@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 import { IconType } from "react-icons";
 
@@ -8,7 +9,12 @@ type Data = {
 
 export default function MenuItems({ item }: { item: Data }) {
   return (
-    <div className="hover:border-b hover:border-slate-400">
+    <div
+      className={cn(
+        "hover:border-b hover:border-slate-400",
+        item.title === "Cabin" ? "border-b border-slate-600" : ""
+      )}
+    >
       <button className="hover:bg-[#ebebeb]/20 rounded-lg">
         <div className="flex flex-col items-center justify-center p-2 gap-3">
           {typeof item.icon === "object"
