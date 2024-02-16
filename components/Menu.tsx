@@ -29,7 +29,7 @@ type Data = {
   title: string;
 };
 
-const data: Data[] = [
+export const data: Data[] = [
   {
     icon: <GiWoodCabin size={25} />,
     title: "Cabin",

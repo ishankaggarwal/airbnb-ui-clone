@@ -27,12 +27,13 @@ export default function ListingCard({ listing }: any) {
                   key={image.id}
                   className="flex justify-center items-center"
                 >
-                  <div className="w-[400px] h-[400px]">
+                  <div className="">
                     <Image
                       src={image}
                       alt={image}
                       quality={100}
-                      fill={true}
+                      width={800}
+                      height={400}
                       style={{ objectFit: "contain" }}
                     />
                   </div>
