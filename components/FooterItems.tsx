@@ -43,7 +43,7 @@ const data: Data[] = [
 
 export default function FooterItems() {
   return (
-    <div className="pl-20 pt-10 flex space-x-60">
+    <div className="pl-20 pt-10 flex space-x-60 pb-10">
       {data.map((item) => (
         <div key={item.title} className="flex flex-col gap-4">
           <span className="text-sm">{item.title}</span>
