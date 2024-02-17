@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import React from "react";
 import { data } from "./Menu";
@@ -35,8 +37,6 @@ const items: Item[] = [
     title: "Airbnb-friendly apartments",
   },
 ];
-
-const menuItems = items;
 
 export default function FooterMenu() {
   return (
