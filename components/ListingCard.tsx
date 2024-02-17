@@ -12,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
 export default function ListingCard({ listing }: any) {
@@ -26,10 +27,12 @@ export default function ListingCard({ listing }: any) {
                 className="flex justify-center items-center"
               >
                 <div className="items-center justify-center flex">
-                  <img
+                  <Image
                     src={image}
                     alt={image}
                     className="rounded-md object-fit w-80 h-80"
+                    width={500}
+                    height={500}
                   />
                 </div>
               </CarouselItem>

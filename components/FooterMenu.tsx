@@ -41,7 +41,7 @@ const items: Item[] = [
 export default function FooterMenu() {
   return (
     <div className="pl-20 pb-10">
-      <div className="border-b border-slate-300 max-w-screen-xl">
+      <div className="hidden md:flex border-b border-slate-300 max-w-screen-xl">
         <div className="flex gap-4">
           {items.map((item, index) => (
             <button

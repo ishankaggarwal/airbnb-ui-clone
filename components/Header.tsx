@@ -7,7 +7,7 @@ import { IoIosMenu } from "react-icons/io";
 export default function Header() {
   return (
     <div className="flex flex-col p-6 border-b-2 border-slate-100">
-      <header className="flex justify-between">
+      <header className="hidden md:flex justify-between">
         <Link href="/" className="flex items-center justify-center pl-20 gap-2">
           <Image src="/logo.svg" alt="logo" width={120} height={120} />
         </Link>

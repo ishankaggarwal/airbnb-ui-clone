@@ -112,7 +112,7 @@ export default function Menu() {
         <FaSliders />
         <span className="text-sm">Filters</span>
       </button>
-      <div className="flex items-center border border-slate-200 p-1 gap-2 rounded-xl flex-1 justify-center h-[60px]">
+      <div className="hidden md:flex items-center border border-slate-200 p-1 gap-2 rounded-xl flex-1 justify-center h-[60px]">
         <span className="text-sm">Display total before taxes</span>
         <Switch />
       </div>

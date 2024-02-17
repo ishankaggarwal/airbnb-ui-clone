@@ -4,6 +4,7 @@ import FooterMenu from "./FooterMenu";
 import { CiGlobe } from "react-icons/ci";
 import { IoLogoFacebook } from "react-icons/io";
 import { FaSquareInstagram } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -22,21 +23,33 @@ export default function Footer() {
             </span>
             <span>2024 Airbnb, Inc.</span>
           </div>
-          <div>Terms</div>
-          <div>Sitemap</div>
-          <div>Privacy</div>
-          <div>Your Privacy Choices</div>
+          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+            Terms
+          </Link>
+          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+            Sitemap
+          </Link>
+          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+            Privacy
+          </Link>
+          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+            Your Privacy Choices
+          </Link>
         </div>
         <div className="flex gap-4 items-center justify-center">
           <div className="flex items-center justify-center gap-1">
             <CiGlobe />
-            <span>English (US)</span>
+            <Link href="/" className="hover:border-b hover:border-b-slate-400">
+              English (US)
+            </Link>
           </div>
-          <div>$ USD</div>
+          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+            $ USD
+          </Link>
           <div className="flex items-center justify-center gap-2">
-            <IoLogoFacebook />
-            <AiFillTwitterSquare />
-            <FaSquareInstagram />
+            <IoLogoFacebook className="cursor-pointer" />
+            <AiFillTwitterSquare className="cursor-pointer" />
+            <FaSquareInstagram className="cursor-pointer" />
           </div>
         </div>
       </div>

@@ -43,9 +43,9 @@ const data: Data[] = [
 
 export default function FooterItems() {
   return (
-    <div className="sm:grid sm:grid-cols-1 pl-20 pt-10 md:flex space-x-60 pb-10">
+    <div className="sm:grid sm:grid-cols-1 pl-20 pt-10 md:flex md:space-x-60 pb-10">
       {data.map((item) => (
-        <div key={item.title} className="flex flex-col gap-4">
+        <div key={item.title} className="flex flex-col gap-4 p-2">
           <span className="text-sm">{item.title}</span>
           <div className="flex flex-col gap-2">
             {item.items.map((i) => (
