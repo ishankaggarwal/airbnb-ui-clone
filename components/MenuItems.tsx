@@ -11,8 +11,8 @@ export default function MenuItems({ item }: { item: Data }) {
   return (
     <div
       className={cn(
-        "hover:border-b hover:border-slate-400",
-        item.title === "Cabin" ? "border-b border-slate-600" : ""
+        "border border-transparent hover:border-b hover:border-b-slate-400",
+        item.title === "Cabin" ? "border-b border-b-slate-600" : ""
       )}
     >
       <button className="hover:bg-[#ebebeb]/20 rounded-lg">

@@ -52,7 +52,7 @@ export default function FooterItems() {
               <Link
                 href="/"
                 key={i}
-                className="text-sm text-gray-600 w-fit hover:border-b hover:border-b-slate-400"
+                className="text-sm text-gray-600 w-fit border border-transparent hover:border-b hover:border-b-slate-400"
               >
                 {i}
               </Link>

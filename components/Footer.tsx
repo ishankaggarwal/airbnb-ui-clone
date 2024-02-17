@@ -23,27 +23,45 @@ export default function Footer() {
             </span>
             <span>2024 Airbnb, Inc.</span>
           </div>
-          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-b hover:border-b-slate-400"
+          >
             Terms
           </Link>
-          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-b hover:border-b-slate-400"
+          >
             Sitemap
           </Link>
-          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-b hover:border-b-slate-400"
+          >
             Privacy
           </Link>
-          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-b hover:border-b-slate-400"
+          >
             Your Privacy Choices
           </Link>
         </div>
         <div className="flex gap-4 items-center justify-center">
           <div className="flex items-center justify-center gap-1">
             <CiGlobe />
-            <Link href="/" className="hover:border-b hover:border-b-slate-400">
+            <Link
+              href="/"
+              className="border border-transparent hover:border-b hover:border-b-slate-400"
+            >
               English (US)
             </Link>
           </div>
-          <Link href="/" className="hover:border-b hover:border-b-slate-400">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-b hover:border-b-slate-400"
+          >
             $ USD
           </Link>
           <div className="flex items-center justify-center gap-2">
