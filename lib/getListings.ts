@@ -13,7 +13,7 @@ function getWeekLaterDate() {
 export async function getListings(){
     var checkin = getTomorrowDate();
     var checkout = getWeekLaterDate();
-    const url = `https://airbnb13.p.rapidapi.com/search-location?location=United%20States&checkin=${checkin}&checkout=${checkout}&adults=1&children=0&infants=0&pets=0&page=1&currency=USD`;
+    const url = `https://airbnb13.p.rapidapi.com/search-location?location=United%20States&checkin=${checkin}&checkout=${checkout}&adults=2&children=0&infants=0&pets=0&page=1&currency=USD`;
     const options = {
 	method: 'GET',
 	headers: {
