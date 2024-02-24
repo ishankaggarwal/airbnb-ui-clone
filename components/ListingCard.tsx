@@ -17,7 +17,7 @@ import { FaStar } from "react-icons/fa";
 
 export default function ListingCard({ listing }: any) {
   return (
-    <Card className="hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:ease-in-out hover:duration-500 hover:transition-all">
+    <Card className="group hover:scale-105 hover:shadow-lg hover:cursor-pointer hover:ease-in-out hover:duration-500 hover:transition-all">
       <CardHeader>
         <Carousel>
           <CarouselContent className="flex">
@@ -38,8 +38,8 @@ export default function ListingCard({ listing }: any) {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="hidden group-hover:flex" />
+          <CarouselNext className="hidden group-hover:flex" />
         </Carousel>
       </CardHeader>
       <CardContent className="flex justify-between">
