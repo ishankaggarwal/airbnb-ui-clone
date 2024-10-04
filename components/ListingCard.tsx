@@ -28,6 +28,7 @@ export default function ListingCard({ listing }: any) {
               >
                 <div className="items-center justify-center flex">
                   <Image
+                    unoptimized
                     src={image}
                     alt={image}
                     className="rounded-md object-fit w-80 h-80"

@@ -9,7 +9,13 @@ export default function Header() {
     <div className="flex flex-col p-6 border-b-2 border-slate-100">
       <header className="hidden md:flex justify-between">
         <Link href="/" className="flex items-center justify-center pl-20 gap-2">
-          <Image src="/logo.svg" alt="logo" width={120} height={120} />
+          <Image
+            unoptimized
+            src="/logo.svg"
+            alt="logo"
+            width={120}
+            height={120}
+          />
         </Link>
 
         <nav className="flex items-center justify-center">
